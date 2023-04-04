@@ -2,3 +2,5 @@
 *.dis
 *.elf
 *.map
+cscope.*
+tags
