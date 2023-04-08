@@ -1,7 +1,7 @@
 #include "asm/csr.h"
 #include "types.h"
 
-#define FW_JUMP_ADDR 0x80200000
+#define FW_JUMP_ADDR 0x80500000
 
 static inline void
 w_pmpaddr0(uint64 x)
