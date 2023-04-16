@@ -6,6 +6,8 @@ typedef unsigned short u16;
 typedef unsigned int u32;
 typedef unsigned long u64;
 
+typedef unsigned long long uint64;
+
 typedef unsigned int size_t;
 
 typedef _Bool bool;
