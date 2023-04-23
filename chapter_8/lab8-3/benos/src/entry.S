@@ -124,6 +124,6 @@ restore_all:
 
 .global trigger_load_access_fault
 trigger_load_access_fault:
-	li a0, 0x70000000
+	li a0, 0xF000000000
 	ld a0, (a0)
 	ret
