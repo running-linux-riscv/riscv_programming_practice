@@ -112,6 +112,6 @@ void sbi_trap_init(void)
 {
 	/* 设置异常向量表地址 */
 	write_csr(mtvec, sbi_exception_vector);
-	/* 所有中断 */
-	write_csr(mie, -1);
+	/* 只使能软件中断 */
+	write_csr(mie, SSIE_BIT | MSIE_BIT);
 }

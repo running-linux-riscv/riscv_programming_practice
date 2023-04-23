@@ -9,6 +9,9 @@
 #define MIP_STIP  (1UL << IRQ_S_TIMER)
 #define MIP_SEIP  (1UL << IRQ_S_EXT)
 
+#define SSIE_BIT (1UL << 1)
+#define MSIE_BIT (1UL << 3)
+
 /* ===== Trap/Exception Causes ===== */
 #define CAUSE_MISALIGNED_FETCH		0x0
 #define CAUSE_FETCH_ACCESS		0x1
