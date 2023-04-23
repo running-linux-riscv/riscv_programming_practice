@@ -120,6 +120,7 @@ void trap_init(void)
 	/* 设置异常向量表地址 */
 	write_csr(stvec, do_exception_vector);
 	printk("stvec=0x%x, 0x%x\n", read_csr(stvec), do_exception_vector);
-	/* 使能所有中断 */
-	write_csr(sie, -1);
+	/* 只使能软件中断 */
+#define SSIE_BIT (1UL << 1)
+	write_csr(sie, SSIE_BIT);
 }

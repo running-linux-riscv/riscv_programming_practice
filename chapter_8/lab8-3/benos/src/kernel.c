@@ -295,6 +295,7 @@ void kernel_main(void)
 
 	print_mem();
 
+	printk("test fault\n");
 	test_fault();
 
 	while (1) {
